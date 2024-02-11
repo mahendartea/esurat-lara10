@@ -1,7 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://avatars.githubusercontent.com/u/87377917?s=200&v=4" width="200" alt="404NFID Logo"></a></p>
-
-
-## Laravel Surat Menyurat v1
+## Laravel Versi 10 - E-Surat
 
 Web app untuk mengelola surat masuk, keluar, serta disposisinya.
 
@@ -84,7 +81,7 @@ Web app untuk mengelola surat masuk, keluar, serta disposisinya.
 <img src="https://github.com/404NotFoundIndonesia/laravel-surat-menyurat-v1/blob/main/database_schema.png" alt="database schema">
 
 ## Installation / Instalasi
-Direkomendasikan menggunakan php > 8.1.0. Pastikan repo ini telah diclone, kemudian buka CLI dan posisikan direktori aktif ke repo ini.
+Direkomendasikan menggunakan php > 8.2.0. Pastikan repo ini telah diclone, kemudian buka CLI dan posisikan direktori aktif ke repo ini.
 Silakan pilih salah satu dari dua cara di bawah ini.
 
 ### Makefile Setup
@@ -136,9 +133,19 @@ Jalankan perintah berikut untuk menambahkan konfigurasi web app
 ```
 php artisan db:seed --class=ConfigSeeder
 ```
-(Opsional) Jalankan perintah berikut untuk menambahkan data-data _dummy_
+Jalan perintah berikut untuk klasifikasi surat
+```php
+php artisan db:seed --Class=ClassificationSeeder.php
 ```
-php artisan db:seed
+
+Jalan perintah berikut untuk Status surat
+```php
+php artisan db:seed --Class=LetterStatusSeeder.php
+```
+
+<!-- (Opsional) Jalankan perintah berikut untuk menambahkan data-data _dummy_ -->
+<!-- ``` -->
+<!-- php artisan db:seed -->
 ```
 Terakhir, jalankan perintah berikut untuk menyalakan web server bawaan laravel 
 ```
