@@ -84,6 +84,12 @@ Web app untuk mengelola surat masuk, keluar, serta disposisinya.
 Direkomendasikan menggunakan php > 8.2.0. Pastikan repo ini telah diclone, kemudian buka CLI dan posisikan direktori aktif ke repo ini.
 Silakan pilih salah satu dari dua cara di bawah ini.
 
+### Dependensy
+- git
+- composer
+- nodejs
+- php
+
 ### Makefile Setup
 Jalankan perintah berikut untuk setup awal
 ```
